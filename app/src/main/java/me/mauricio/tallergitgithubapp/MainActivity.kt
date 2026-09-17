@@ -53,4 +53,99 @@ fun PantallaClase() {
                 .clip(CircleShape),
             contentScale = ContentScale.Crop
         )
-    }}
+
+
+        Text(
+            text = "Mauricio Herrera",
+            fontSize = 18.sp,
+            color = Color.Black,
+            fontWeight = FontWeight.Bold,
+            textAlign = TextAlign.Center,
+            modifier = Modifier.padding(top = 10.dp)
+        )
+
+
+        Text(
+            text = "Desarrollador Móvil Jr",
+            color = Color.Blue,
+            fontSize = 10.sp
+        )
+
+        Spacer(modifier = Modifier.height(20.dp))
+
+
+        HorizontalDivider(
+            thickness = 1.dp,
+            color = Color(0xFFD3D3D3)
+        )
+
+        Spacer(modifier = Modifier.height(10.dp))
+
+
+        Column(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalAlignment = Alignment.Start
+        ) {
+
+            Text(
+                text = "EDAD",
+                fontSize = 9.sp,
+                color = Color(0xFF90A4AE),
+                fontWeight = FontWeight.Bold
+            )
+
+            Text(
+                text = "20 años",
+                fontSize = 11.sp,
+                color = Color(0xFF607D8B)
+            )
+        }
+
+        Spacer(modifier = Modifier.height(10.dp))
+
+
+        Column(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalAlignment = Alignment.Start
+        ) {
+
+            Text(
+                text = "CORREO",
+                fontSize = 9.sp,
+                color = Color(0xFF90A4AE),
+                fontWeight = FontWeight.Bold
+            )
+
+            Text(
+                text = "[email protected]",
+                fontSize = 11.sp,
+                color = Color.Blue,
+                textDecoration = TextDecoration.Underline
+            )
+        }
+
+        Spacer(modifier = Modifier.height(10.dp))
+
+
+        Column(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalAlignment = Alignment.Start
+        ) {
+
+            Text(
+                text = "CIUDAD",
+                fontSize = 9.sp,
+                color = Color(0xFF607D8B),
+                fontWeight = FontWeight.Bold
+            )
+
+            Text(
+                text = "Bucaramanga, Colombia",
+                fontSize = 11.sp,
+                color = Color(0xFF607D8B)
+            )
+        }
+
+        Spacer(modifier = Modifier.height(15.dp))
+    }
+}
