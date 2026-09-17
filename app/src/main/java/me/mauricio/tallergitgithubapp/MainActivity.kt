@@ -147,5 +147,55 @@ fun PantallaClase() {
         }
 
         Spacer(modifier = Modifier.height(15.dp))
+
+
+        HorizontalDivider(
+            thickness = 1.dp,
+            color = Color(0xFFD3D3D3)
+        )
+
+        Spacer(modifier = Modifier.height(10.dp))
+
+
+        Text(
+            text = "Mi Materia Favorita",
+            fontSize = 9.sp,
+            color = Color(0xFF90A4AE),
+            fontWeight = FontWeight.Bold
+        )
+
+        Spacer(modifier = Modifier.height(8.dp))
+
+
+        Text(
+            text = "Amo las técnologias digitales, me apasiona la idea de poder crear sistemas capaces de modelas las necesidades de las personas por medio de un lenguaje y estructura fácil de comprender y leer.",
+            fontSize = 10.sp,
+            color = Color(0xFF607D8B),
+            lineHeight = 15.sp
+        )
+    }
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(20.dp),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Bottom
+    ) {
+        Text(
+            text = "Contactar Conmigo",
+            color = Color.White,
+            modifier = Modifier
+                .background(
+                    color = Color(0xFFADD8E6),
+                    shape = RoundedCornerShape(10.dp)
+                )
+                .border(
+                    width = 1.dp,
+                    color = Color(0xFFADD8E6),
+                    shape = RoundedCornerShape(10.dp)
+                )
+                .padding(8.dp)
+        )
+
     }
 }
